@@ -182,9 +182,6 @@ module.exports.handler = async (event) => {
          });
          
          bot.onText(/\/tiktok/, async msg => { 
-
-            await bot.sendMessage(msg.chat.id, `Please authorized`);
-
          
              if (!authorized){
                  await bot.sendMessage(msg.chat.id, `Please login first in order to access the bot features!`);
