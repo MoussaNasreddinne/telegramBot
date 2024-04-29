@@ -188,6 +188,7 @@ module.exports.handler = async (event) => {
          
              if (!authorized){
                  await bot.sendMessage(msg.chat.id, `Please login first in order to access the bot features!`);
+                 return;
              } 
              
          
