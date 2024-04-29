@@ -37,7 +37,7 @@ async function authenticateUser(chatId){
             }
         });
         // Example: Check response status and take appropriate action
-        if (response.data.Authorized == true) {
+        if (response.data.Authorized == "true") {
             authorized = true;
             await bot.sendMessage(chatId, response.data.Message);
         } else {
